@@ -118,7 +118,7 @@ def main():
                 print("\nNo conflicts found in the final colouring!")
 
             # Print time taken for processing the graph
-            print(f"\n⏳ Time taken for {graph_name}: {elapsed_time:.4f} seconds\n")
+            print(f"\n Time taken for {graph_name}: {elapsed_time:.4f} seconds\n")
 
     # Notify the user where the output has been saved
     print(f"\nOutput saved to: {log_filename}\n")
