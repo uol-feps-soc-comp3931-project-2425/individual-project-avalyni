@@ -1,5 +1,6 @@
 import json
 import sys
+import time
 from algorithms.bipartite_check import is_bipartite_with_colouring
 from algorithms.decomposition import construct_decomposition_tree
 
@@ -50,12 +51,15 @@ def main():
     """
 
     # Load graph data from JSON file
-    with open('data/triangle_theta_free_graphs.json', 'r') as f:
+    with open('data/sample_graphs.json', 'r') as f:
         data = json.load(f) 
 
     # Iterate through graphs and process each
     for graph_name, adj_list in data.items(): 
         graph = {int(k): v for k, v in adj_list.items()} # Convert keys to integers
+
+        # Record start time
+        start_time = time.time()
 
         # Print header for clarity in logs
         print(f"\n{'═' * 60}")
@@ -80,6 +84,12 @@ def main():
 
         # Step 2: Construct and print decomposition tree
         decomposition_tree = construct_decomposition_tree(graph)
+
+        # Record end time
+        end_time = time.time()
+
+        # Calculate elapsed time
+        elapsed_time = end_time - start_time
 
         if decomposition_tree is None:
             print("\nThis graph is not in our class.") # If decomposition_tree returns None, the graph does not meet the requirements of our class
@@ -106,6 +116,9 @@ def main():
                 print(f"\n{adjacency_violations} conflicts found in the final colouring of {graph_name}!")
             else:
                 print("\nNo conflicts found in the final colouring!")
+
+            # Print time taken for processing the graph
+            print(f"\n⏳ Time taken for {graph_name}: {elapsed_time:.4f} seconds\n")
 
     # Notify the user where the output has been saved
     print(f"\nOutput saved to: {log_filename}\n")
