@@ -1,0 +1,654 @@
+
+════════════════════════════════════════════════════════════
+         STARTING TEST: small_triangle_theta_free_1         
+════════════════════════════════════════════════════════════
+
+
+Graph adjacency list:
+  0: [1, 4, 5]
+  1: [0, 2, 6]
+  2: [1, 3]
+  3: [2, 4]
+  4: [0, 3]
+  5: [0, 6, 9, 15]
+  6: [1, 5, 7]
+  7: [6, 8]
+  8: [7, 9]
+  9: [5, 8, 14, 16]
+  10: [11, 14]
+  11: [10, 12]
+  12: [11, 13]
+  13: [12, 14]
+  14: [9, 10, 13]
+  15: [5, 16, 19]
+  16: [9, 15, 17]
+  17: [16, 18]
+  18: [17, 19]
+  19: [15, 18]
+
+The graph is not bipartite, decomposition will begin now.
+- Cutset [14]: Decomposing into 2 blocks...
+    - Remaining Graph: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 14, 15, 16, 17, 18, 19]
+    - Extreme Block (Leaf): [10, 11, 12, 13, 14]
+    - Cutset [0, 1]: Decomposing into 2 blocks...
+        - Remaining Graph: [0, 1, 5, 6, 7, 8, 9, 14, 15, 16, 17, 18, 19]
+        - Extreme Block (Leaf): [0, 1, 2, 3, 4]
+        - Cutset [5, 9]: Decomposing into 2 blocks...
+            - Remaining Graph: [0, 1, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19]
+            - Extreme Block (Leaf): [5, 9, 14]
+            - Cutset [5, 6]: Decomposing into 2 blocks...
+                - Remaining Graph: [5, 6, 7, 8, 9, 15, 16, 17, 18, 19]
+                - Extreme Block (Leaf): [0, 1, 5, 6]
+                - Cutset [5, 9]: Decomposing into 2 blocks...
+                    - Extreme Block (Leaf): [5, 6, 7, 8, 9]
+                    - Extreme Block (Leaf): [5, 9, 15, 16, 17, 18, 19]
+Here is the final colouring of the decomposition tree
+{10: 'Colour 1', 11: 'Colour 3', 12: 'Colour 1', 13: 'Colour 3', 14: 'Colour 2', 0: 'Colour 1', 1: 'Colour 2', 2: 'Colour 1', 3: 'Colour 2', 4: 'Colour 3', 9: 'Colour 3', 5: 'Colour 2', 6: 'Colour 1', 7: 'Colour 2', 8: 'Colour 1', 15: 'Colour 3', 16: 'Colour 2', 17: 'Colour 3', 18: 'Colour 2', 19: 'Colour 1'}
+
+No conflicts found in the final colouring!
+
+════════════════════════════════════════════════════════════
+         STARTING TEST: small_triangle_theta_free_2         
+════════════════════════════════════════════════════════════
+
+
+Graph adjacency list:
+  0: [1, 4]
+  1: [0, 2]
+  2: [1, 3]
+  3: [2, 4, 10]
+  4: [0, 3, 5, 11]
+  5: [4, 6, 9, 16]
+  6: [5, 7]
+  7: [6, 8]
+  8: [7, 9]
+  9: [5, 8]
+  10: [3, 11, 14]
+  11: [4, 10, 12]
+  12: [11, 13]
+  13: [12, 14]
+  14: [10, 13]
+  15: [16, 19]
+  16: [5, 15, 17]
+  17: [16, 18]
+  18: [17, 19]
+  19: [15, 18]
+
+The graph is not bipartite, decomposition will begin now.
+- Cutset [5]: Decomposing into 2 blocks...
+    - Remaining Graph: [0, 1, 2, 3, 4, 5, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+    - Extreme Block (Leaf): [5, 6, 7, 8, 9]
+    - Cutset [16]: Decomposing into 2 blocks...
+        - Remaining Graph: [0, 1, 2, 3, 4, 5, 10, 11, 12, 13, 14, 16]
+        - Extreme Block (Leaf): [15, 16, 17, 18, 19]
+        - Cutset [3, 4]: Decomposing into 2 blocks...
+            - Remaining Graph: [3, 4, 5, 10, 11, 12, 13, 14, 16]
+            - Extreme Block (Leaf): [0, 1, 2, 3, 4]
+            - Cutset [4, 5]: Decomposing into 2 blocks...
+                - Remaining Graph: [3, 4, 5, 10, 11, 12, 13, 14]
+                - Extreme Block (Leaf): [4, 5, 16]
+                - Cutset [3, 4]: Decomposing into 2 blocks...
+                    - Extreme Block (Leaf): [3, 4, 5]
+                    - Extreme Block (Leaf): [3, 4, 10, 11, 12, 13, 14]
+Here is the final colouring of the decomposition tree
+{5: 'Colour 1', 6: 'Colour 3', 7: 'Colour 1', 8: 'Colour 3', 9: 'Colour 2', 15: 'Colour 2', 16: 'Colour 3', 17: 'Colour 2', 18: 'Colour 3', 19: 'Colour 1', 0: 'Colour 2', 1: 'Colour 1', 2: 'Colour 2', 3: 'Colour 1', 4: 'Colour 3', 10: 'Colour 3', 11: 'Colour 1', 12: 'Colour 3', 13: 'Colour 1', 14: 'Colour 2'}
+
+No conflicts found in the final colouring!
+
+════════════════════════════════════════════════════════════
+         STARTING TEST: small_triangle_theta_free_3         
+════════════════════════════════════════════════════════════
+
+
+Graph adjacency list:
+  0: [1, 4]
+  1: [0, 2, 5, 10]
+  2: [1, 3, 6]
+  3: [2, 4]
+  4: [0, 3]
+  5: [1, 6, 9, 17]
+  6: [2, 5, 7]
+  7: [6, 8]
+  8: [7, 9]
+  9: [5, 8]
+  10: [1, 11, 14]
+  11: [10, 12]
+  12: [11, 13]
+  13: [12, 14]
+  14: [10, 13]
+  15: [16, 19]
+  16: [15, 17]
+  17: [5, 16, 18]
+  18: [17, 19]
+  19: [15, 18]
+
+The graph is not bipartite, decomposition will begin now.
+- Cutset [10]: Decomposing into 2 blocks...
+    - Remaining Graph: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 16, 17, 18, 19]
+    - Extreme Block (Leaf): [10, 11, 12, 13, 14]
+    - Cutset [17]: Decomposing into 2 blocks...
+        - Remaining Graph: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 17]
+        - Extreme Block (Leaf): [15, 16, 17, 18, 19]
+        - Cutset [0, 1]: Decomposing into 2 blocks...
+            - Remaining Graph: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 17]
+            - Extreme Block (Leaf): [0, 1, 10]
+            - Cutset [1, 2]: Decomposing into 2 blocks...
+                - Remaining Graph: [1, 2, 5, 6, 7, 8, 9, 17]
+                - Extreme Block (Leaf): [0, 1, 2, 3, 4]
+                - Cutset [1, 5]: Decomposing into 2 blocks...
+                    - Extreme Block (Leaf): [1, 5, 17]
+                    - Extreme Block (Leaf): [1, 2, 5, 6, 7, 8, 9]
+Here is the final colouring of the decomposition tree
+{10: 'Colour 1', 11: 'Colour 3', 12: 'Colour 1', 13: 'Colour 3', 14: 'Colour 2', 15: 'Colour 2', 16: 'Colour 3', 17: 'Colour 2', 18: 'Colour 3', 19: 'Colour 1', 0: 'Colour 1', 1: 'Colour 2', 2: 'Colour 1', 3: 'Colour 2', 4: 'Colour 3', 5: 'Colour 1', 6: 'Colour 2', 7: 'Colour 1', 8: 'Colour 2', 9: 'Colour 3'}
+
+No conflicts found in the final colouring!
+
+════════════════════════════════════════════════════════════
+         STARTING TEST: small_triangle_theta_free_4         
+════════════════════════════════════════════════════════════
+
+
+Graph adjacency list:
+  0: [1, 4, 10]
+  1: [0, 2]
+  2: [1, 3]
+  3: [2, 4, 5]
+  4: [0, 3, 6, 11]
+  5: [3, 6, 9]
+  6: [4, 5, 7]
+  7: [6, 8]
+  8: [7, 9]
+  9: [5, 8]
+  10: [0, 11, 14]
+  11: [4, 10, 12]
+  12: [11, 13]
+  13: [12, 14]
+  14: [10, 13]
+
+The graph is not bipartite, decomposition will begin now.
+- Cutset [5, 6]: Decomposing into 2 blocks...
+    - Remaining Graph: [0, 1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]
+    - Extreme Block (Leaf): [5, 6, 7, 8, 9]
+    - Cutset [3, 4]: Decomposing into 2 blocks...
+        - Remaining Graph: [0, 1, 2, 3, 4, 10, 11, 12, 13, 14]
+        - Extreme Block (Leaf): [3, 4, 5, 6]
+        - Cutset [0, 4]: Decomposing into 2 blocks...
+            - Extreme Block (Leaf): [0, 1, 2, 3, 4]
+            - Extreme Block (Leaf): [0, 4, 10, 11, 12, 13, 14]
+Here is the final colouring of the decomposition tree
+{5: 'Colour 1', 6: 'Colour 3', 7: 'Colour 1', 8: 'Colour 3', 9: 'Colour 2', 3: 'Colour 3', 4: 'Colour 1', 0: 'Colour 2', 1: 'Colour 3', 2: 'Colour 2', 10: 'Colour 1', 11: 'Colour 2', 12: 'Colour 1', 13: 'Colour 2', 14: 'Colour 3'}
+
+No conflicts found in the final colouring!
+
+════════════════════════════════════════════════════════════
+         STARTING TEST: small_triangle_theta_free_5         
+════════════════════════════════════════════════════════════
+
+
+Graph adjacency list:
+  0: [1, 4]
+  1: [0, 2]
+  2: [1, 3]
+  3: [2, 4, 5]
+  4: [0, 3, 6]
+  5: [3, 6, 9]
+  6: [4, 5, 7]
+  7: [6, 8]
+  8: [7, 9, 11]
+  9: [5, 8, 10]
+  10: [9, 11, 14]
+  11: [8, 10, 12]
+  12: [11, 13]
+  13: [12, 14]
+  14: [10, 13]
+
+The graph is not bipartite, decomposition will begin now.
+- Cutset [3, 4]: Decomposing into 2 blocks...
+    - Remaining Graph: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+    - Extreme Block (Leaf): [0, 1, 2, 3, 4]
+    - Cutset [5, 6]: Decomposing into 2 blocks...
+        - Remaining Graph: [5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+        - Extreme Block (Leaf): [3, 4, 5, 6]
+        - Cutset [8, 9]: Decomposing into 2 blocks...
+            - Extreme Block (Leaf): [5, 6, 7, 8, 9]
+            - Extreme Block (Leaf): [8, 9, 10, 11, 12, 13, 14]
+Here is the final colouring of the decomposition tree
+{0: 'Colour 1', 1: 'Colour 3', 2: 'Colour 1', 3: 'Colour 3', 4: 'Colour 2', 6: 'Colour 3', 5: 'Colour 2', 7: 'Colour 2', 8: 'Colour 3', 9: 'Colour 1', 10: 'Colour 3', 11: 'Colour 1', 12: 'Colour 3', 13: 'Colour 1', 14: 'Colour 2'}
+
+No conflicts found in the final colouring!
+
+════════════════════════════════════════════════════════════
+         STARTING TEST: large_triangle_theta_free_1         
+════════════════════════════════════════════════════════════
+
+
+Graph adjacency list:
+  0: [1, 4]
+  1: [0, 2, 10, 25]
+  2: [1, 3, 6, 11, 18]
+  3: [2, 4]
+  4: [0, 3]
+  5: [6, 9]
+  6: [2, 5, 7]
+  7: [6, 8]
+  8: [7, 9]
+  9: [5, 8]
+  10: [1, 11, 14]
+  11: [2, 10, 12]
+  12: [11, 13]
+  13: [12, 14]
+  14: [10, 13]
+  15: [16, 19]
+  16: [15, 17, 24]
+  17: [16, 18]
+  18: [2, 17, 19]
+  19: [15, 18]
+  20: [21, 24]
+  21: [20, 22]
+  22: [21, 23]
+  23: [22, 24]
+  24: [16, 20, 23]
+  25: [1, 26, 29]
+  26: [25, 27]
+  27: [26, 28]
+  28: [27, 29]
+  29: [25, 28, 34]
+  30: [31, 34]
+  31: [30, 32]
+  32: [31, 33]
+  33: [32, 34]
+  34: [29, 30, 33]
+
+The graph is not bipartite, decomposition will begin now.
+- Cutset [6]: Decomposing into 2 blocks...
+    - Remaining Graph: [0, 1, 2, 3, 4, 6, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
+    - Extreme Block (Leaf): [5, 6, 7, 8, 9]
+    - Cutset [24]: Decomposing into 2 blocks...
+        - Remaining Graph: [0, 1, 2, 3, 4, 6, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
+        - Extreme Block (Leaf): [20, 21, 22, 23, 24]
+        - Cutset [34]: Decomposing into 2 blocks...
+            - Remaining Graph: [0, 1, 2, 3, 4, 6, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 24, 25, 26, 27, 28, 29, 34]
+            - Extreme Block (Leaf): [30, 31, 32, 33, 34]
+            - Cutset [2, 3]: Decomposing into 2 blocks...
+                - Remaining Graph: [0, 1, 2, 3, 4, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 24, 25, 26, 27, 28, 29, 34]
+                - Extreme Block (Leaf): [2, 3, 6]
+                - Cutset [1, 2]: Decomposing into 2 blocks...
+                    - Remaining Graph: [1, 2, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 24, 25, 26, 27, 28, 29, 34]
+                    - Extreme Block (Leaf): [0, 1, 2, 3, 4]
+                    - Cutset [28, 29]: Decomposing into 2 blocks...
+                        - Remaining Graph: [1, 2, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 24, 25, 26, 27, 28, 29]
+                        - Extreme Block (Leaf): [28, 29, 34]
+                        - Cutset [25]: Decomposing into 2 blocks...
+                            - Remaining Graph: [1, 2, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 24, 25]
+                            - Extreme Block (Leaf): [25, 26, 27, 28, 29]
+                            - Cutset [1, 2]: Decomposing into 2 blocks...
+                                - Remaining Graph: [1, 2, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 24]
+                                - Extreme Block (Leaf): [1, 2, 25]
+                                - Cutset [10, 11]: Decomposing into 2 blocks...
+                                    - Remaining Graph: [1, 2, 10, 11, 15, 16, 17, 18, 19, 24]
+                                    - Extreme Block (Leaf): [10, 11, 12, 13, 14]
+                                    - Cutset [2]: Decomposing into 2 blocks...
+                                        - Remaining Graph: [2, 15, 16, 17, 18, 19, 24]
+                                        - Extreme Block (Leaf): [1, 2, 10, 11]
+                                        - Cutset [16, 17]: Decomposing into 2 blocks...
+                                            - Remaining Graph: [2, 15, 16, 17, 18, 19]
+                                            - Extreme Block (Leaf): [16, 17, 24]
+                                            - Cutset [18]: Decomposing into 2 blocks...
+                                                - Extreme Block (Leaf): [15, 16, 17, 18, 19]
+                                                - Extreme Block (Leaf): [2, 18]
+Here is the final colouring of the decomposition tree
+{5: 'Colour 1', 6: 'Colour 3', 7: 'Colour 1', 8: 'Colour 3', 9: 'Colour 2', 20: 'Colour 1', 21: 'Colour 3', 22: 'Colour 1', 23: 'Colour 3', 24: 'Colour 2', 30: 'Colour 2', 31: 'Colour 3', 32: 'Colour 2', 33: 'Colour 3', 34: 'Colour 1', 2: 'Colour 2', 3: 'Colour 3', 0: 'Colour 2', 1: 'Colour 3', 4: 'Colour 1', 28: 'Colour 1', 29: 'Colour 3', 25: 'Colour 2', 26: 'Colour 1', 27: 'Colour 2', 10: 'Colour 2', 11: 'Colour 3', 12: 'Colour 2', 13: 'Colour 3', 14: 'Colour 1', 17: 'Colour 2', 16: 'Colour 3', 15: 'Colour 2', 18: 'Colour 3', 19: 'Colour 1'}
+
+No conflicts found in the final colouring!
+
+════════════════════════════════════════════════════════════
+         STARTING TEST: large_triangle_theta_free_2         
+════════════════════════════════════════════════════════════
+
+
+Graph adjacency list:
+  0: [1, 4]
+  1: [0, 2]
+  2: [1, 3]
+  3: [2, 4, 9, 25]
+  4: [0, 3, 26]
+  5: [6, 9]
+  6: [5, 7]
+  7: [6, 8, 10, 17, 23]
+  8: [7, 9, 11]
+  9: [3, 5, 8]
+  10: [7, 11, 14]
+  11: [8, 10, 12]
+  12: [11, 13]
+  13: [12, 14]
+  14: [10, 13]
+  15: [16, 19]
+  16: [15, 17]
+  17: [7, 16, 18]
+  18: [17, 19]
+  19: [15, 18]
+  20: [21, 24]
+  21: [20, 22]
+  22: [21, 23]
+  23: [7, 22, 24]
+  24: [20, 23]
+  25: [3, 26, 29]
+  26: [4, 25, 27]
+  27: [26, 28]
+  28: [27, 29]
+  29: [25, 28]
+
+The graph is not bipartite, decomposition will begin now.
+- Cutset [17]: Decomposing into 2 blocks...
+    - Remaining Graph: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 17, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+    - Extreme Block (Leaf): [15, 16, 17, 18, 19]
+    - Cutset [23]: Decomposing into 2 blocks...
+        - Remaining Graph: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 17, 23, 25, 26, 27, 28, 29]
+        - Extreme Block (Leaf): [20, 21, 22, 23, 24]
+        - Cutset [3, 4]: Decomposing into 2 blocks...
+            - Remaining Graph: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 17, 23, 25, 26, 27, 28, 29]
+            - Extreme Block (Leaf): [0, 1, 2, 3, 4]
+            - Cutset [7, 17]: Decomposing into 2 blocks...
+                - Remaining Graph: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 17, 25, 26, 27, 28, 29]
+                - Extreme Block (Leaf): [7, 17, 23]
+                - Cutset [6, 7]: Decomposing into 2 blocks...
+                    - Remaining Graph: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 25, 26, 27, 28, 29]
+                    - Extreme Block (Leaf): [6, 7, 17]
+                    - Cutset [10, 11]: Decomposing into 2 blocks...
+                        - Remaining Graph: [3, 4, 5, 6, 7, 8, 9, 10, 11, 25, 26, 27, 28, 29]
+                        - Extreme Block (Leaf): [10, 11, 12, 13, 14]
+                        - Cutset [7, 8]: Decomposing into 2 blocks...
+                            - Remaining Graph: [3, 4, 5, 6, 7, 8, 9, 25, 26, 27, 28, 29]
+                            - Extreme Block (Leaf): [7, 8, 10, 11]
+                            - Cutset [9]: Decomposing into 2 blocks...
+                                - Remaining Graph: [3, 4, 9, 25, 26, 27, 28, 29]
+                                - Extreme Block (Leaf): [5, 6, 7, 8, 9]
+                                - Cutset [3, 4]: Decomposing into 2 blocks...
+                                    - Extreme Block (Leaf): [3, 4, 9]
+                                    - Extreme Block (Leaf): [3, 4, 25, 26, 27, 28, 29]
+Here is the final colouring of the decomposition tree
+{15: 'Colour 1', 16: 'Colour 3', 17: 'Colour 1', 18: 'Colour 3', 19: 'Colour 2', 20: 'Colour 2', 21: 'Colour 1', 22: 'Colour 2', 23: 'Colour 1', 24: 'Colour 3', 0: 'Colour 1', 1: 'Colour 3', 2: 'Colour 1', 3: 'Colour 3', 4: 'Colour 2', 7: 'Colour 3', 6: 'Colour 1', 10: 'Colour 1', 11: 'Colour 3', 12: 'Colour 1', 13: 'Colour 3', 14: 'Colour 2', 8: 'Colour 1', 5: 'Colour 3', 9: 'Colour 2', 25: 'Colour 2', 26: 'Colour 3', 27: 'Colour 2', 28: 'Colour 3', 29: 'Colour 1'}
+
+No conflicts found in the final colouring!
+
+════════════════════════════════════════════════════════════
+         STARTING TEST: large_triangle_theta_free_3         
+════════════════════════════════════════════════════════════
+
+
+Graph adjacency list:
+  0: [1, 4, 10, 25]
+  1: [0, 2]
+  2: [1, 3, 20]
+  3: [2, 4, 5]
+  4: [0, 3, 6, 11, 16, 26]
+  5: [3, 6, 9]
+  6: [4, 5, 7]
+  7: [6, 8]
+  8: [7, 9]
+  9: [5, 8]
+  10: [0, 11, 14]
+  11: [4, 10, 12]
+  12: [11, 13]
+  13: [12, 14]
+  14: [10, 13]
+  15: [16, 19]
+  16: [4, 15, 17]
+  17: [16, 18]
+  18: [17, 19]
+  19: [15, 18]
+  20: [2, 21, 24]
+  21: [20, 22]
+  22: [21, 23]
+  23: [22, 24]
+  24: [20, 23, 34]
+  25: [0, 26, 29]
+  26: [4, 25, 27]
+  27: [26, 28]
+  28: [27, 29]
+  29: [25, 28]
+  30: [31, 34]
+  31: [30, 32]
+  32: [31, 33]
+  33: [32, 34]
+  34: [24, 30, 33]
+
+The graph is not bipartite, decomposition will begin now.
+- Cutset [16]: Decomposing into 2 blocks...
+    - Remaining Graph: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
+    - Extreme Block (Leaf): [15, 16, 17, 18, 19]
+    - Cutset [34]: Decomposing into 2 blocks...
+        - Remaining Graph: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 34]
+        - Extreme Block (Leaf): [30, 31, 32, 33, 34]
+        - Cutset [0, 4]: Decomposing into 2 blocks...
+            - Remaining Graph: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 34]
+            - Extreme Block (Leaf): [0, 4, 16]
+            - Cutset [5, 6]: Decomposing into 2 blocks...
+                - Remaining Graph: [0, 1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 34]
+                - Extreme Block (Leaf): [5, 6, 7, 8, 9]
+                - Cutset [3, 4]: Decomposing into 2 blocks...
+                    - Remaining Graph: [0, 1, 2, 3, 4, 10, 11, 12, 13, 14, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 34]
+                    - Extreme Block (Leaf): [3, 4, 5, 6]
+                    - Cutset [10, 11]: Decomposing into 2 blocks...
+                        - Remaining Graph: [0, 1, 2, 3, 4, 10, 11, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 34]
+                        - Extreme Block (Leaf): [10, 11, 12, 13, 14]
+                        - Cutset [0, 4]: Decomposing into 2 blocks...
+                            - Remaining Graph: [0, 1, 2, 3, 4, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 34]
+                            - Extreme Block (Leaf): [0, 4, 10, 11]
+                            - Cutset [23, 24]: Decomposing into 2 blocks...
+                                - Remaining Graph: [0, 1, 2, 3, 4, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+                                - Extreme Block (Leaf): [23, 24, 34]
+                                - Cutset [20]: Decomposing into 2 blocks...
+                                    - Remaining Graph: [0, 1, 2, 3, 4, 20, 25, 26, 27, 28, 29]
+                                    - Extreme Block (Leaf): [20, 21, 22, 23, 24]
+                                    - Cutset [1, 2]: Decomposing into 2 blocks...
+                                        - Remaining Graph: [0, 1, 2, 3, 4, 25, 26, 27, 28, 29]
+                                        - Extreme Block (Leaf): [1, 2, 20]
+                                        - Cutset [0, 4]: Decomposing into 2 blocks...
+                                            - Extreme Block (Leaf): [0, 1, 2, 3, 4]
+                                            - Extreme Block (Leaf): [0, 4, 25, 26, 27, 28, 29]
+Here is the final colouring of the decomposition tree
+{15: 'Colour 1', 16: 'Colour 3', 17: 'Colour 1', 18: 'Colour 3', 19: 'Colour 2', 30: 'Colour 3', 31: 'Colour 2', 32: 'Colour 3', 33: 'Colour 2', 34: 'Colour 1', 0: 'Colour 3', 4: 'Colour 1', 5: 'Colour 1', 6: 'Colour 2', 7: 'Colour 1', 8: 'Colour 2', 9: 'Colour 3', 3: 'Colour 2', 10: 'Colour 1', 11: 'Colour 3', 12: 'Colour 1', 13: 'Colour 3', 14: 'Colour 2', 24: 'Colour 3', 23: 'Colour 1', 20: 'Colour 2', 21: 'Colour 1', 22: 'Colour 2', 1: 'Colour 2', 2: 'Colour 3', 25: 'Colour 1', 26: 'Colour 3', 27: 'Colour 1', 28: 'Colour 3', 29: 'Colour 2'}
+
+No conflicts found in the final colouring!
+
+════════════════════════════════════════════════════════════
+         STARTING TEST: large_triangle_theta_free_4         
+════════════════════════════════════════════════════════════
+
+
+Graph adjacency list:
+  0: [1, 4, 10, 37]
+  1: [0, 2]
+  2: [1, 3, 9]
+  3: [2, 4, 15]
+  4: [0, 3, 11, 16]
+  5: [6, 9]
+  6: [5, 7]
+  7: [6, 8, 26]
+  8: [7, 9]
+  9: [2, 5, 8]
+  10: [0, 11, 14, 23]
+  11: [4, 10, 12]
+  12: [11, 13]
+  13: [12, 14]
+  14: [10, 13]
+  15: [3, 16, 19]
+  16: [4, 15, 17]
+  17: [16, 18]
+  18: [17, 19]
+  19: [15, 18]
+  20: [21, 24, 34]
+  21: [20, 22]
+  22: [21, 23]
+  23: [10, 22, 24]
+  24: [20, 23]
+  25: [26, 29]
+  26: [7, 25, 27]
+  27: [26, 28]
+  28: [27, 29]
+  29: [25, 28]
+  30: [31, 34]
+  31: [30, 32]
+  32: [31, 33]
+  33: [32, 34]
+  34: [20, 30, 33]
+  35: [36, 39]
+  36: [35, 37]
+  37: [0, 36, 38]
+  38: [37, 39]
+  39: [35, 38]
+
+The graph is not bipartite, decomposition will begin now.
+- Cutset [26]: Decomposing into 2 blocks...
+    - Remaining Graph: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 26, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]
+    - Extreme Block (Leaf): [25, 26, 27, 28, 29]
+    - Cutset [34]: Decomposing into 2 blocks...
+        - Remaining Graph: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 26, 34, 35, 36, 37, 38, 39]
+        - Extreme Block (Leaf): [30, 31, 32, 33, 34]
+        - Cutset [37]: Decomposing into 2 blocks...
+            - Remaining Graph: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 26, 34, 37]
+            - Extreme Block (Leaf): [35, 36, 37, 38, 39]
+            - Cutset [0, 1]: Decomposing into 2 blocks...
+                - Remaining Graph: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 26, 34]
+                - Extreme Block (Leaf): [0, 1, 37]
+                - Cutset [6, 7]: Decomposing into 2 blocks...
+                    - Remaining Graph: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 34]
+                    - Extreme Block (Leaf): [6, 7, 26]
+                    - Cutset [9]: Decomposing into 2 blocks...
+                        - Remaining Graph: [0, 1, 2, 3, 4, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 34]
+                        - Extreme Block (Leaf): [5, 6, 7, 8, 9]
+                        - Cutset [1, 2]: Decomposing into 2 blocks...
+                            - Remaining Graph: [0, 1, 2, 3, 4, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 34]
+                            - Extreme Block (Leaf): [1, 2, 9]
+                            - Cutset [10, 11]: Decomposing into 2 blocks...
+                                - Remaining Graph: [0, 1, 2, 3, 4, 10, 11, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 34]
+                                - Extreme Block (Leaf): [10, 11, 12, 13, 14]
+                                - Cutset [15, 16]: Decomposing into 2 blocks...
+                                    - Remaining Graph: [0, 1, 2, 3, 4, 10, 11, 15, 16, 20, 21, 22, 23, 24, 34]
+                                    - Extreme Block (Leaf): [15, 16, 17, 18, 19]
+                                    - Cutset [3, 4]: Decomposing into 2 blocks...
+                                        - Remaining Graph: [0, 1, 2, 3, 4, 10, 11, 20, 21, 22, 23, 24, 34]
+                                        - Extreme Block (Leaf): [3, 4, 15, 16]
+                                        - Cutset [0, 4]: Decomposing into 2 blocks...
+                                            - Remaining Graph: [0, 4, 10, 11, 20, 21, 22, 23, 24, 34]
+                                            - Extreme Block (Leaf): [0, 1, 2, 3, 4]
+                                            - Cutset [10]: Decomposing into 2 blocks...
+                                                - Remaining Graph: [10, 20, 21, 22, 23, 24, 34]
+                                                - Extreme Block (Leaf): [0, 4, 10, 11]
+                                                - Cutset [20, 24]: Decomposing into 2 blocks...
+                                                    - Remaining Graph: [10, 20, 21, 22, 23, 24]
+                                                    - Extreme Block (Leaf): [20, 24, 34]
+                                                    - Cutset [23]: Decomposing into 2 blocks...
+                                                        - Extreme Block (Leaf): [20, 21, 22, 23, 24]
+                                                        - Extreme Block (Leaf): [10, 23]
+Here is the final colouring of the decomposition tree
+{25: 'Colour 1', 26: 'Colour 3', 27: 'Colour 1', 28: 'Colour 3', 29: 'Colour 2', 30: 'Colour 1', 31: 'Colour 3', 32: 'Colour 1', 33: 'Colour 3', 34: 'Colour 2', 35: 'Colour 1', 36: 'Colour 3', 37: 'Colour 1', 38: 'Colour 3', 39: 'Colour 2', 0: 'Colour 2', 1: 'Colour 1', 6: 'Colour 3', 7: 'Colour 2', 5: 'Colour 2', 8: 'Colour 3', 9: 'Colour 1', 2: 'Colour 2', 10: 'Colour 3', 11: 'Colour 2', 12: 'Colour 3', 13: 'Colour 2', 14: 'Colour 1', 15: 'Colour 3', 16: 'Colour 1', 17: 'Colour 3', 18: 'Colour 1', 19: 'Colour 2', 3: 'Colour 1', 4: 'Colour 3', 24: 'Colour 2', 20: 'Colour 3', 21: 'Colour 1', 22: 'Colour 3', 23: 'Colour 1'}
+
+No conflicts found in the final colouring!
+
+════════════════════════════════════════════════════════════
+         STARTING TEST: large_triangle_theta_free_5         
+════════════════════════════════════════════════════════════
+
+
+Graph adjacency list:
+  0: [1, 4]
+  1: [0, 2]
+  2: [1, 3, 5, 20, 41]
+  3: [2, 4, 6]
+  4: [0, 3]
+  5: [2, 6, 9, 13, 21]
+  6: [3, 5, 7]
+  7: [6, 8]
+  8: [7, 9]
+  9: [5, 8]
+  10: [11, 14, 15]
+  11: [10, 12]
+  12: [11, 13]
+  13: [5, 12, 14, 33]
+  14: [10, 13, 16]
+  15: [10, 16, 19]
+  16: [14, 15, 17]
+  17: [16, 18]
+  18: [17, 19]
+  19: [15, 18, 29]
+  20: [2, 21, 24]
+  21: [5, 20, 22]
+  22: [21, 23]
+  23: [22, 24]
+  24: [20, 23, 37]
+  25: [26, 29]
+  26: [25, 27]
+  27: [26, 28]
+  28: [27, 29]
+  29: [19, 25, 28]
+  30: [31, 34]
+  31: [30, 32]
+  32: [31, 33]
+  33: [13, 32, 34]
+  34: [30, 33]
+  35: [36, 39]
+  36: [35, 37]
+  37: [24, 36, 38]
+  38: [37, 39]
+  39: [35, 38]
+  40: [41, 44]
+  41: [2, 40, 42]
+  42: [41, 43]
+  43: [42, 44]
+  44: [40, 43]
+
+The graph is not bipartite, decomposition will begin now.
+- Cutset [29]: Decomposing into 2 blocks...
+    - Remaining Graph: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44]
+    - Extreme Block (Leaf): [25, 26, 27, 28, 29]
+    - Cutset [33]: Decomposing into 2 blocks...
+        - Remaining Graph: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 29, 33, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44]
+        - Extreme Block (Leaf): [30, 31, 32, 33, 34]
+        - Cutset [37]: Decomposing into 2 blocks...
+            - Remaining Graph: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 29, 33, 37, 40, 41, 42, 43, 44]
+            - Extreme Block (Leaf): [35, 36, 37, 38, 39]
+            - Cutset [41]: Decomposing into 2 blocks...
+                - Remaining Graph: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 29, 33, 37, 41]
+                - Extreme Block (Leaf): [40, 41, 42, 43, 44]
+                - Cutset [1, 2]: Decomposing into 2 blocks...
+                    - Remaining Graph: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 29, 33, 37]
+                    - Extreme Block (Leaf): [1, 2, 41]
+                    - Cutset [2, 3]: Decomposing into 2 blocks...
+                        - Remaining Graph: [2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 29, 33, 37]
+                        - Extreme Block (Leaf): [0, 1, 2, 3, 4]
+                        - Cutset [5, 6]: Decomposing into 2 blocks...
+                            - Remaining Graph: [2, 3, 5, 6, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 29, 33, 37]
+                            - Extreme Block (Leaf): [5, 6, 7, 8, 9]
+                            - Cutset [2, 5]: Decomposing into 2 blocks...
+                                - Remaining Graph: [2, 5, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 29, 33, 37]
+                                - Extreme Block (Leaf): [2, 3, 5, 6]
+                                - Cutset [20, 24]: Decomposing into 2 blocks...
+                                    - Remaining Graph: [2, 5, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 29, 33]
+                                    - Extreme Block (Leaf): [20, 24, 37]
+                                    - Cutset [5, 13]: Decomposing into 2 blocks...
+                                        - Remaining Graph: [2, 5, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 29]
+                                        - Extreme Block (Leaf): [5, 13, 33]
+                                        - Cutset [20, 21]: Decomposing into 2 blocks...
+                                            - Remaining Graph: [2, 5, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 29]
+                                            - Extreme Block (Leaf): [20, 21, 22, 23, 24]
+                                            - Cutset [5]: Decomposing into 2 blocks...
+                                                - Remaining Graph: [5, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 29]
+                                                - Extreme Block (Leaf): [2, 5, 20, 21]
+                                                - Cutset [12, 13]: Decomposing into 2 blocks...
+                                                    - Remaining Graph: [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 29]
+                                                    - Extreme Block (Leaf): [5, 12, 13]
+                                                    - Cutset [10, 14]: Decomposing into 2 blocks...
+                                                        - Remaining Graph: [10, 14, 15, 16, 17, 18, 19, 29]
+                                                        - Extreme Block (Leaf): [10, 11, 12, 13, 14]
+                                                        - Cutset [18, 19]: Decomposing into 2 blocks...
+                                                            - Extreme Block (Leaf): [18, 19, 29]
+                                                            - Extreme Block (Leaf): [10, 14, 15, 16, 17, 18, 19]
+Here is the final colouring of the decomposition tree
+{25: 'Colour 1', 26: 'Colour 3', 27: 'Colour 1', 28: 'Colour 3', 29: 'Colour 2', 30: 'Colour 1', 31: 'Colour 2', 32: 'Colour 1', 33: 'Colour 2', 34: 'Colour 3', 35: 'Colour 2', 36: 'Colour 3', 37: 'Colour 2', 38: 'Colour 3', 39: 'Colour 1', 40: 'Colour 1', 41: 'Colour 2', 42: 'Colour 1', 43: 'Colour 2', 44: 'Colour 3', 1: 'Colour 2', 2: 'Colour 1', 0: 'Colour 1', 3: 'Colour 2', 4: 'Colour 3', 5: 'Colour 2', 6: 'Colour 1', 7: 'Colour 2', 8: 'Colour 1', 9: 'Colour 3', 24: 'Colour 3', 20: 'Colour 2', 13: 'Colour 1', 21: 'Colour 1', 22: 'Colour 2', 23: 'Colour 1', 12: 'Colour 2', 10: 'Colour 2', 11: 'Colour 1', 14: 'Colour 3', 18: 'Colour 2', 19: 'Colour 1', 15: 'Colour 3', 16: 'Colour 2', 17: 'Colour 3'}
+
+No conflicts found in the final colouring!
+
+Output saved to: decomposition_output.log
+
