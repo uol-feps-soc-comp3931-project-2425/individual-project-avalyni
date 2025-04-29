@@ -1,0 +1,37 @@
+Evaluation Graph Set – Description
+
+TF_THF_bipartite_10: Dense, triangle-free bipartite graph (complete bipartite K_{n/2,n/2}).
+TF_THF_bipartite_20: Dense, triangle-free bipartite graph (complete bipartite K_{n/2,n/2}).
+TF_THF_bipartite_30: Dense, triangle-free bipartite graph (complete bipartite K_{n/2,n/2}).
+TF_THF_bipartite_40: Dense, triangle-free bipartite graph (complete bipartite K_{n/2,n/2}).
+TF_THF_bipartite_50: Dense, triangle-free bipartite graph (complete bipartite K_{n/2,n/2}).
+TF_THF_tree_10: Triangle-free, theta-free: a randomly generated tree with 10 nodes.
+TF_THF_tree_20: Triangle-free, theta-free: a randomly generated tree with 20 nodes.
+TF_THF_tree_30: Triangle-free, theta-free: a randomly generated tree with 30 nodes.
+TF_THF_tree_40: Triangle-free, theta-free: a randomly generated tree with 40 nodes.
+TF_THF_tree_50: Triangle-free, theta-free: a randomly generated tree with 50 nodes.
+TF_T_theta_10: Triangle-free, but contains a theta structure formed by three disjoint paths.
+TF_T_theta_20: Triangle-free, but contains a theta structure formed by three disjoint paths.
+TF_T_theta_30: Triangle-free, but contains a theta structure formed by three disjoint paths.
+TF_T_theta_40: Triangle-free, but contains a theta structure formed by three disjoint paths.
+TF_T_theta_50: Triangle-free, but contains a theta structure formed by three disjoint paths.
+T_THF_triangle_10: Contains a triangle (3-cycle), but no theta structure.
+T_THF_triangle_20: Contains a triangle (3-cycle), but no theta structure.
+T_THF_triangle_30: Contains a triangle (3-cycle), but no theta structure.
+T_THF_triangle_40: Contains a triangle (3-cycle), but no theta structure.
+T_THF_triangle_50: Contains a triangle (3-cycle), but no theta structure.
+T_T_combo_10: Contains both a triangle and a theta structure in the same graph.
+T_T_combo_20: Contains both a triangle and a theta structure in the same graph.
+T_T_combo_30: Contains both a triangle and a theta structure in the same graph.
+T_T_combo_40: Contains both a triangle and a theta structure in the same graph.
+T_T_combo_50: Contains both a triangle and a theta structure in the same graph.
+UNSURE_random_dense_10: Random dense graph with p=0.3, may or may not contain triangle/theta.
+UNSURE_random_dense_20: Random dense graph with p=0.3, may or may not contain triangle/theta.
+UNSURE_random_dense_30: Random dense graph with p=0.3, may or may not contain triangle/theta.
+UNSURE_random_dense_40: Random dense graph with p=0.3, may or may not contain triangle/theta.
+UNSURE_random_dense_50: Random dense graph with p=0.3, may or may not contain triangle/theta.
+UNSURE_random_sparse_10: Random sparse graph with p=0.05, may or may not contain triangle/theta.
+UNSURE_random_sparse_20: Random sparse graph with p=0.05, may or may not contain triangle/theta.
+UNSURE_random_sparse_30: Random sparse graph with p=0.05, may or may not contain triangle/theta.
+UNSURE_random_sparse_40: Random sparse graph with p=0.05, may or may not contain triangle/theta.
+UNSURE_random_sparse_50: Random sparse graph with p=0.05, may or may not contain triangle/theta.
